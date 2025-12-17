@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="DiTrevi | Contact Us" data-sr="DiTrevi | Kontakt">DiTrevi | Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="site-header">
+    <nav class="navbar">
+        
+        <a href="index.html" class="brand">di trevi</a>
+
+        <div class="nav-right">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="language-switch">
+                <button class="lang-toggle" id="langToggle">EN</button>
+            </div>
+
+            <!-- DROPDOWN MENU -->
+            <div class="dropdown">
+                <button id="dropdownBtn" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="dropdownMenu" class="dropdown-menu" role="menu" aria-hidden="true">
+                    <li role="menuitem"><a href="index.html" data-lang="home">Home</a></li>
+                    <li role="menuitem"><a href="cenovnik.html" data-lang="pricing">Cenovnik</a></li>
+                    <li role="menuitem"><a href="galerija.html" data-lang="gallery">Galerija</a></li>
+                    <li role="menuitem"><a href="contact.html" data-lang="contact">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+    <!--Kontakt Sekcija-->
+    <main class="contact-main">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1 data-lang="getInTouch">Get in Touch</h1>
+                <p data-lang="getInTouchText">We'd love to hear from you. Whether you have a question about our menu, reservations, or anything else, our team is ready to answer all your questions.</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-form-section">
+                    <h2 data-lang="sendMessage">Send us a message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label data-lang="yourName" for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Ime Prezime">
+                        </div>
+                        <div class="form-group">
+                            <label data-lang="emailAddress" for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="emailadresa@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label data-lang="phoneNumber" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+381 60 1234 567">
+                        </div>
+                        <div class="form-group">
+                            <label data-lang="yourMessage" for="message">Your Message</label>
+                            <textarea id="message" rows="4" placeholder="Kako Vam mozemo pomoci?"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-lang="sendBtn">
+                            <i data-feather="send"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2 data-lang="contactInfo">Contact Information</h2>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div>
+                                <h3 data-lang="ourLocation">Our Location</h3>
+                                <p>Resavska 34, Beograd, Srbija</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i data-feather="phone"></i>
+                            </div>
+                            <div>
+                                <h3 data-lang="phone">Phone Number</h3>
+                                <p>011/3230-015</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <div>
+                                <h3 data-lang="email">Email Address</h3>
+                                <p>ditrevi@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i data-feather="clock"></i>
+                            </div>
+                            <div>
+                               <h3 data-lang="openingHours">Opening Hours</h3>
+                                <p data-lang="vreme">Monday - Saturday: 8:00 AM - 12:00 PM</p>
+                                <p data-lang="vreme2">Sunday: 9:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3 data-lang="followUs">Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/ditrevicaffe/" target="_blank" rel="noopener noreferrer">
+                            <i data-feather="instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/17Wj11b1x2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                            <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#"><i data-feather="twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer Sekcija-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Di Trevi</h3>
+                <p data-lang="footerDesc">Authentic Italian cafe experience in the heart of the city.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/ditrevicaffe/" target="_blank" rel="noopener noreferrer">
+                    <i data-feather="instagram"></i></a>
+                    <a href="#"><i data-feather="facebook"></i></a>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4 data-lang="quickLinks">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Pocetna</a></li>
+                    <li><a href="cenovnik.html">Cenovnik</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 data-lang="contactInfoFooter">Contact Info</h4>
+                <ul>
+                    <li><i data-feather="map-pin"></i> Resavska 34, Beograd, Srbija</li>
+                    <li><i data-feather="phone"></i> 011/3230-015</li>
+                    <li><i data-feather="mail"></i> ditrevi@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> codexvita. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

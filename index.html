@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="DiTrevi | Official Web Site" data-sr="DiTrevi | Zvanični Web Sajt">DiTrevi | Official Web Site</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="counter-container">
+            <span id="counter" class="counter">2006</span>
+        </div>
+    </div>
+
+
+    <div id="mainContent" class="main-content">
+    <header class="site-header">
+        <nav class="navbar">
+        <a href="index.html" class="brand">di trevi</a>
+        <div class="nav-right">
+            <!-- LANGUAGE SWITCH (sada ide levo) -->
+            <div class="language-switch">
+                <button class="lang-toggle" id="langToggle">EN</button>
+            </div>
+            <!-- DROPDOWN MENU (sada ide skroz desno) -->
+            <div class="dropdown">
+                <button id="dropdownBtn" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="dropdownMenu" class="dropdown-menu" role="menu" aria-hidden="true">
+                    <li role="menuitem"><a href="index.html" data-en="Home" data-sr="Pocetna"="home">Pocetna</a></li>
+                    <li role="menuitem"><a href="cenovnik.html" data-en="Price List" data-sr="Cenovnik"="menu">Cenovnik</a></li>
+                    <li role="menuitem"><a href="galerija.html" data-en="Gallery" data-sr="Galerija"="gallery">Galerija</a></li>
+                    <li role="menuitem"><a href="contact.html" data-en="Contact" data-sr="Kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <main class="site-main">
+            <!-- Hero Section with Video -->
+            <section class="hero">
+                <div class="video-wrap">
+                    <video id="heroVideo" class="hero-video" poster="poster.jpg" autoplay muted loop playsinline>
+                        <source src="New_project.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+ <section id="about">
+  <div class="about-container">
+
+    <h2 data-en="About Us" data-sr="O Nama">About Us</h2>
+      
+    <h3 data-en="Di Trevi – The Spirit of Rome in Belgrade" data-sr="Di Trevi – duh Rima u Beogradu">
+      Di Trevi – duh Rima u Beogradu
+    </h3>
+      
+    <p data-en="Located on Resavska Street, Di Trevi café combines the elegance of Rome with the urban rhythm of Belgrade. With our mini fountain – a symbol of wishes and beautiful moments – enjoy the perfect espresso during the day, and cocktails and homemade rakija in the evening.
+
+Whether for a quick break, socializing or relaxation, Di Trevi is a place where atmosphere and taste go hand in hand.
+
+Di Trevi - Belgrade with Italian charm." 
+       data-sr="Smesten u Resavskoj ulici, kafic Di Trevi spaja eleganciju Rima sa urbanim ritmom Beograda. Uz nasu mini fontanu – simbol zelja i lepih trenutaka – uzivajte u savrsenom espressu tokom dana, a uvece u koktelima i domacim rakijama.
+
+Bilo za kratku pauzu, druzenje ili opustanje, Di Trevi je mesto gde atmosfera i ukus idu ruku pod ruku.
+
+Di Trevi - Beograd sa italijanskim sarmom.">
+      Smesten u Resavskoj ulici, kafic Di Trevi spaja eleganciju Rima sa urbanim ritmom Beograda. Uz nasu mini fontanu – simbol zelja i lepih trenutaka – uzivajte u savrsenom espressu tokom dana, a uvece u koktelima i domacim rakijama.
+
+      Bilo za kratku pauzu, druzenje ili opustanje, Di Trevi je mesto gde atmosfera i ukus idu ruku pod ruku.
+
+      Di Trevi – Beograd sa italijanskim sarmom.
+    </p>
+  </div>
+  </section>
+     <!--Footer Sekcija-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Di Trevi</h3>
+                <p data-lang="footerDesc">Authentic Italian cafe experience in the heart of the city.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/ditrevicaffe/" target="_blank" rel="noopener noreferrer">
+                    <i data-feather="instagram"></i></a>
+                    <a href="#"><i data-feather="facebook"></i></a>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4 data-lang="quickLinks">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Pocetna</a></li>
+                    <li><a href="cenovnik.html">Cenovnik</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 data-lang="contactInfoFooter">Contact Info</h4>
+                <ul>
+                    <li><i data-feather="map-pin"></i> Resavska 34, Beograd, Srbija</li>
+                    <li><i data-feather="phone"></i> 011/3230-015</li>
+                    <li><i data-feather="mail"></i> ditrevi@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> codexvita. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+                feather.replace();
+                document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
